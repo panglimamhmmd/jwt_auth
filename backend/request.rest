@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJqb2huIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImlhdCI6MTcxMTU4OTIwNiwiZXhwIjoxNzExNTg5MjI2fQ.uQ3DneZRr7rxEWiruiUm9TIjWNGC-Aeb8WJ1xOV3Ae8
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "john",
+    "email": "johndoe@gmail.com",
+    "password" : "123123123",
+    "confirmPassword" : "123123123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "johndoe@gmail.com",
+    "password" : "123123123"
+}
+
+###
+GET http://localhost:5000/token
+
+
+### 
+DELETE http://localhost:5000/logout
+
